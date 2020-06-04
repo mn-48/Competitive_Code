@@ -8,6 +8,7 @@ mkdir .ssh
 cd .ssh
 pwd
 ssh-keygen -t rsa -C "jason@jasongtaylor.com"
+ls -al
 mate id_rsa.pub
 ssh -T git@github.com
  
