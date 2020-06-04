@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1591288273 source:/home/nazmul/Desktop/competitive_code/cpp_code/main.cpp
+	<iostream>
+
+1591288244 source:/home/nazmul/Desktop/competitive_code/cpp_code/helloworld.cpp
+	<iostream>
+
