@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is JS programming</title>
+    <script type="text/javascript">
+        function  CalculateDay() {
+            day = document.getElementById("txtMarks").value;
+            day = parseInt(day)
+
+            switch (day) {
+                case 1:
+                    x = 'Saturday';
+                    break;
+
+                case 2:
+                    x = 'Sunday';
+                    break;
+
+                case 3:
+                    x = 'Monday';
+                    break;
+                case 4:
+                    x = 'Tuesday';
+                    break;
+
+                case 5:
+                    x = 'Wednesday';
+                    break;
+                case 6:
+                    x = 'Thirsday';
+                    break;
+
+                case 7:
+                    x = 'Friday';
+                    break;
+
+                default:
+                    x = "Input number 1-7";
+            }
+            alert(x);
+
+        }
+
+
+    </script>
+</head>
+<body>
+Input Day Number: <input type="text" id="txtMarks"> <br>
+<button onclick="CalculateDay();">OK</button>
+</body>
+</html>

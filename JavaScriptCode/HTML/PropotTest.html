@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confir box</title>
+    <script type="text/javascript">
+
+    function prompotTest(){
+     var x;
+    var name = prompt("Enter your name: ");
+    if (name != null){
+        x = "Hello "+ name;
+        document.getElementById('txtName').value=x;
+
+    }
+    }
+
+    </script>
+</head>
+<body>
+<input type="text" id="txtName">
+<button onclick="prompotTest();">click me</button>
+</body>
+</html>

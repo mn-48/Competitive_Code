@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confir box</title>
+    <script type="text/javascript">
+
+    function confirmTest(){
+    ck = confirm("Are you Sure to enter out site?");
+        if(ck == true){
+            window.open('https://www.google.com.tw/');
+
+        }
+        else
+        {
+            alert("You did not enter");
+        }
+    }
+
+    </script>
+</head>
+<body>
+<button onclick="confirmTest();">click me</button>
+</body>
+</html>

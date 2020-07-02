@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>while</title>
+    <script type="text/javascript">
+        function CalLoop() {
+
+            n = document.getElementById("inp").value;
+            f =1
+            n = parseInt(n);
+            for (i =1; i<=n;i++){
+
+                if(i==3)
+                    break;
+                else
+                {
+                    document.write(f*=i)
+                    document.write("    ")
+
+                }
+
+
+            }
+
+        }
+    </script>
+
+
+</head>
+<body>
+
+Input n=:<input type="text" id="inp"> <br>
+<button onclick="CalLoop();">OK</button>
+</body>
+</html>

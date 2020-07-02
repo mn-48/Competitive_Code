@@ -23,3 +23,10 @@ Verify SSH authentication
 
 ssh -T git@github.com
 Above command uses ssh to connect to GitHub over the SSH protocol.
+
+###################################################################
+
+git status
+git add . 
+git commit -m 'msg'
+git push origin master

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function argument example</title>
+    <script type="text/javascript">
+        function  CalculateSum(n1,n2) {
+            s =parseInt(n1)+ parseInt(n2);
+            return s;
+
+        }
+    </script>
+</head>
+<body>
+
+Input number1: <input type="text" id="a"> <br><br>
+Input number2: <input type="text" id="b"> <br>
+
+<button onclick="alert(CalculateSum(document.getElementById('a').value,document.getElementById('b').value))">ok</button>
+
+</body>
+</html>
