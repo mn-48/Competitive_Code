@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form validation</title>
+    <script>
+        function validateForm() {
+            first = document.forms["FirstForm"]["FirstName"].value;
+            last = document.forms["FirstForm"]["LastName"].value;
+
+            if(first==null || first =="")
+            {
+                alert("Please input first name.")
+                return false
+            }
+
+             if(last==null || last =="")
+            {
+                alert("Please input last name.")
+                return false
+            }
+
+             else
+             {alert("Your name is: "+first+" "+last)}
+
+        }
+    </script>
+</head>
+<body>
+<form name="FirstForm" onsubmit="return validateForm()" method="post">
+
+    Type your first name: <input type="text" name="FirstName" size="30" value=""> <br>
+    Type your last name: <input type="text" name="LastName" size="30"> <br>
+    <input type="submit" value="submit">
+    <input type="reset" value="reset">
+</form>
+</body>
+</html>

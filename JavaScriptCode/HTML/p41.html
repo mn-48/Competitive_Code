@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Try catch</title>
+
+</head>
+<body>
+ <script type="text/javascript">
+        var x = prompt("Enterr your age: ", "");
+
+
+        try {
+            if(x>18){
+                throw 'Err1';
+            }
+
+            else if(x<18){
+                throw 'Err2';
+            }
+            else if(isNaN(x)){
+                throw 'Err3';
+            }
+
+
+        }
+        catch (err) {
+        if(err=='Err1'){
+            num = 12.03247896
+            alert("you are adult");
+            alert(num.toFixed(2))
+        }
+        if(err=='Err2'){
+            alert("you are young");
+        }
+        if(err=='Err3'){
+            alert("your input is not a number");
+        }
+
+        }
+
+
+    </script>
+</body>
+</html>

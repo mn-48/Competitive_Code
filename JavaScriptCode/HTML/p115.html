@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo">Windows height and width (including toolbars and scrollbars</p>
+<button onclick="myFunction()" >Ok</button>
+
+<script>
+
+function myFunction() {
+    w = window.outerWidth;
+    h = window.outerHeight
+
+    x = document.getElementById('demo')
+    x.innerHTML = "Width: "+w+" Height: "+h;
+
+}
+
+
+</script>
+
+</body>
+</html>

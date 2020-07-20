@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        var yourWindow;
+        
+        function openWin() {
+            yourWindow = window.open('','STS computer', 'width=200 height=100')
+            yourWindow.document.write("</p>" + "This is chield windows" + "</p>")
+            yourWindow.focus()
+
+            yourWindow.opener.document.write("</p>" + "This is parent windows" + "</p>")
+
+        }
+    </script>
+    
+    
+
+</head>
+<body>
+<input type="button" value="open" onclick="openWin()"/>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function chk() {
+            if(window.top != window.self)
+            {document.write("This is not top most windows")}
+            else
+                {document.write("This is the top most windows")}
+        }
+    </script>
+</head>
+<body>
+<input type="button" onclick="chk()" value="ckeck topmost window">
+</body>
+</html>

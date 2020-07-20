@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Try catch</title>
+    <script type="text/javascript">
+        txt = ""
+        function message() {
+            try {
+                promptBox('Welcome')
+            }
+            catch (err) {
+                txt += "error: " + err.message + "\n\n";
+                txt += "click ok to continue";
+                alert(txt);
+
+            }
+
+        }
+    </script>
+</head>
+<body>
+<input type="button" value = "View message" onclick="message()"/>
+</body>
+</html>

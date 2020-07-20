@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Max method</title>
+    <script>
+
+        function mathFunction() {
+            itm1 = document.getElementById('inp1').value;
+            itm2 = document.getElementById('inp2').value;
+            itm3 = document.getElementById('inp3').value;
+            itm4 = document.getElementById('inp4').value;
+
+            res  = itm1* Math.PI/180
+
+            //res = Math.round(itm1);
+            //res = Math.pow(itm1,itm2)
+            //res = Math.max(itm1,itm2,itm3,itm4)
+            //res = Math.min(itm1,itm2,itm3,itm4)
+            document.getElementById('output').value = res;
+
+        }
+    </script>
+</head>
+<body>
+<h1> Example of math function max(x) </h1>
+
+Input1:<input type="text" id="inp1" value=""/> <br>
+Input2:<input type="text" id="inp2" value=""/><br>
+Input3:<input type="text" id="inp3" value=""/><br>
+Input4:<input type="text" id="inp4" value=""/><br>
+Output:<input type="text" id="output" value=""/><br>
+<input type="button" onclick="mathFunction();" value="Get max">
+
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>img</title>
+</head>
+<body>
+<script>
+    function ImageMap(val) {
+        document.getElementById("text1").value = val;
+    }
+    function MouseOut(val) {
+    document.getElementById("text1").value = val;
+    }
+    // background:#FF5EAA;
+</script>
+
+<p>Click on the image:</p>
+
+<input type="text" id="text1" size="20"/>
+<img src="images/nazmul.jpg" width="150" height="150" usemap="#mymap">
+
+<map name="mymap">
+    <area shape="rect" coords="0,80,40,120" href="ear.html" onmouseover="ImageMap('This is image of ear')" onmouseout="MouseOut" target="_blank">
+    <area shape="circle" coords="95,90,10" href="lip.html" onmouseover="ImageMap('This is image of lip')" onmouseout="MouseOut('')" target="_blank">
+    <area shape="circle" coords="95,70,10" href="nose.html" onmouseover="ImageMap('This is image of nose')" onmouseout="MouseOut('')" target="_blank">
+</map>
+
+</body>
+</html>

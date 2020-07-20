@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Window close example</title>
+
+    <script>
+        var yourWindow;
+        function openWindow() {
+            yourWindow = window.open("","","width = 500, height = 300")
+        }
+
+        function closeWindow() {
+            if(yourWindow)
+            {
+                yourWindow.close();
+            }
+        }
+
+        function checkWin() {
+        if(!yourWindow)
+        {
+
+            document.getElementById("msg").innerHTML="'yourWindow' has never been opened!";
+        }
+        else
+        {
+
+            if(yourWindow.closed){
+                document.getElementById("msg").innerHTML="'yourWindow''s closed!";
+            }
+            else
+            {
+                document.getElementById("msg").innerHTML="'yourWindow''s not closed!";
+
+            }
+        }
+
+        }
+
+    </script>
+</head>
+<body>
+
+<input type="button" value="open 'yourWindow'" onclick="openWindow()" >
+
+<input type="button" value="close 'yourWindow'" onclick="closeWindow()" >
+<br><br>
+<input type="button" value="Has 'yourWindow' been cloased?" onclick="checkWin()" >
+<br><br>
+
+<div id="msg"></div>
+
+</body>
+</html>
