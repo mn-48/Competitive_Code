@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  html {
+    overflow-x: hidden;
+  }
+  
+  .banner {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  
+  .banner img {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .heading {
+    color: white;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    font-family: Lobster;
+    text-decoration: underline;
+  }
+  
+  #About {
+    margin-top: 20px;
+  }
+  
+  
+  
+  .img1 {
+    width: 75px;
+    height: 75px;
+    border: 3px solid black;
+    padding: 5px;
+  }
+  
+  
+  
+  
+  
+  
+  body {
+    
+    background-size: cover;
+    
+  
+  }
+  
+  
+  .element {
+      text-shadow:
+          -1px -1px 0 #000,
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+          1px 1px 0 #000;
+  }
+  
+  
+  .spanA {
+    color: white;
+     
+  }
+  
+  .span0 {
+   font-weight: bold;
+  }
+  
+  .span1 {
+    color: #c94c4c;
+  }
+  
+  .span2 {
+    color: #eea29a;
+  }
+  
+  .span3 {
+    color: #b1cbbb;
+  }
+  
+  .span4 {
+    color: #feb236;
+  }
+  
+  .span5 {
+    color: #405d27;
+  }
+  
+  .span6 {
+    color: #eca1a6;
+  }
+  
+  
+  .main-content {
+    
+    text-align: center;
+    border-top: 5px solid black;
+    overflow-x: hidden;
+  }
+  
+  header {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  li {
+    margin-right: 40px;
+  }
+  
+  .spanLink {
+    color: white;
+    font-family: Lobster;
+    
+  }
+  
+  
+  @media (min-width: 992px) {
+      .About {
+          margin-left: 100%;
+          
+      }
+  }
+  
+  @media (max-width: 991px) {
+    .About {
+      margin-bottom: -4%;
+    }
+  }
+  
+  
+  
+  #home {
+    font-size: 30px;
+    font-family: Raleway;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-right: auto;
+    padding-left: auto;
+    overflow-x: hidden;
+    
+  }
+  
+  
+  
+  p {
+    font-family: Raleway;
+    font-weight: bold;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  header {
+    font-family: Lobster;
+  }
+  
+  footer {
+    background-color: grey;
+    height: 100px;
+    border-top: 5px solid black;
+    text-align: center;
+    font-family: Raleway;
+    width: 100%;
+    padding-top: 3%;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  h4 {
+    font-family: "Raleway";
+    padding-top: 10px;
+  }
+   
+  
+  
+  #myContainer {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #myContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 1em;
+      grid-row-gap: 100px;
+    }
+  }
+  
+  
+  #Portfolio {
+    text-align: center;
+  }
+  
+  .contactCenter{
+    text-align: center;
+    
+  }
+  
+  .left-image {
+    width: 100px;
+    height: 100px;
+    margin-top: 75px;
+    overflow-x: hidden;
+  }
+  
+  .left1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .right-image {
+    width: 100px;
+    height: 100px;
+    margin-top: 75px;
+    overflow-x: hidden;
+  }
+  
+  .right1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+  }
+  
+  .right2 {
+    width: 175px;
+    overflow-x: hidden;
+  }
+  
+  
+  
+  
+  #portImage {
+    width: 90%;
+    height: 200px;
+    border: 5px solid black;
+    overflow-x: hidden;
+  }
+  
+  .portSpan {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .spanLink:hover {
+    color: #c94c4c;
+  }
+  
