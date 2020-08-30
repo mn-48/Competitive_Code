@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Angular Js</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+        <script src="app.js"></script>
+        
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <!-- <script src="data.js"></script> -->
+
+        <style>
+            .blue{
+                color:blue;
+            }
+        </style>
+
+    </head>
+    <body ng-app="myModule" ng-controller="myCtrl">
+
+        <div>
+            <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+                <!-- Navbar content -->
+            </nav>
+
+        </div>
+    
+        
+        <div class="container">
+            <div> 
+                <h1>{{tutorial.title}}</h1>
+                <h1 style="color: rgb(243, 9, 9);">{{tutorial.episode}}</h1>
+                <h1 class="blue">{{tutorial.author}}</h1>
+                <hr>
+            </div>
+           
+            
+            <div>
+
+<!-- 
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>FristName</th>
+                            <th>LastName</th>
+                            <th>JobTitle</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                
+                      // <tr ng-repeat="emp in employee | limitTo: 5:2"> 
+                         <tr ng-repeat="emp in employees">
+                            <td>{{emp.firstName}}</td>
+                             <td>{{emp.lastName}}</td>
+                             <td>{{emp.jobTitleName}}</td>
+                             <td>{{emp.phoneNumber}}</td>
+                            <td> {{emp.emailAddress}}</td>
+                            
+                        </tr>
+                    </tbody>
+                </table> -->
+                
+
+
+                
+                <!-- <button ng-click="showData(1)">Show data</button> -->
+                <!-- {{abc}} -->
+                <div ng-include="'show.html'"> 
+
+                </div>
+            </div>
+            
+        
+
+            <!-- <div>
+                <img style="
+                    width: 600px;
+                    height: auto;
+                " ng-src="{{image1}}" alt="my image">
+            </div> -->
+        </div>
+      
+
+
+    </body>
+
+</html>
